@@ -5,14 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let n1, n2;
+        var n1, n2;
         
-            n1 = prompt("digite um numero:");
-            n2 = prompt("digite o outro numero:");
+            function Somar() {
+                n1 = Number(document.getElementById('numero1').value);
+                n2 = Number(document.getElementById('numero2').value);
 
-            n1 = Number(n1);
-            n2 = Number(n2);
-           
+                alert(n1 + n2);
+            }
+            function Subtrair() {
+                n1 = Number(document.getElementById('numero1').value);
+                n2 = Number(document.getElementById('numero2').value);
+
+                alert(n1 - n2);
+            }
+            function Multiplicar() {
+                n1 = Number(document.getElementById('numero1').value);
+                n2 = Number(document.getElementById('numero2').value);
+
+                alert(n1 * n2);
+            }
+            function Dividir() {
+                n1 = Number(document.getElementById('numero1').value);
+                n2 = Number(document.getElementById('numero2').value);
+
+                alert(n1 / n2);
+            }
     </script>
 </head>
+<body>
+    <label for="numero1">Digite o primeiro numero: </label>
+    <input type="text">
+    <br><br>
+
+    <label for="numero2">digite o segundo numero: </label>
+    <input type="text">
+    
+</body>
 </html>
